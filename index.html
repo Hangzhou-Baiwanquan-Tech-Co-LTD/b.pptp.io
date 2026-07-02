@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>教程下载</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .container {
+    max-width: 640px;
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #1a1a2e;
+    margin-bottom: 1.5rem;
+  }
+  .file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .file-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .file-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+  .icon {
+    width: 42px;
+    height: 42px;
+    background: #e74c3c;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .icon.zip { background: #f39c12; }
+  .info { flex: 1; }
+  .name { font-size: 1rem; font-weight: 500; }
+  .size { font-size: 0.8rem; color: #999; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>教程下载</h1>
+  <div class="file-list">
+    <a class="file-link" href="电脑v2教程.pdf" target="_blank">
+      <div class="icon">PDF</div>
+      <div class="info">
+        <div class="name">电脑 V2 教程</div>
+        <div class="size">3.2 MB</div>
+      </div>
+    </a>
+    <a class="file-link" href="v2-windows-64-SelfContained.zip" download>
+      <div class="icon zip">ZIP</div>
+      <div class="info">
+        <div class="name">V2 Windows 64 客户端</div>
+        <div class="size">133 MB</div>
+      </div>
+    </a>
+    <a class="file-link" href="比特浏览器使用教程.pdf" target="_blank">
+      <div class="icon">PDF</div>
+      <div class="info">
+        <div class="name">比特浏览器使用教程</div>
+        <div class="size">2.3 MB</div>
+      </div>
+    </a>
+    <a class="file-link" href="iphone使用经验分享.pdf" target="_blank">
+      <div class="icon">PDF</div>
+      <div class="info">
+        <div class="name">iPhone 使用经验分享</div>
+        <div class="size">2.3 MB</div>
+      </div>
+    </a>
+    <a class="file-link" href="安卓手机扫码.pdf" target="_blank">
+      <div class="icon">PDF</div>
+      <div class="info">
+        <div class="name">安卓手机扫码</div>
+        <div class="size">1.9 MB</div>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
